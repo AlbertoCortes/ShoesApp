@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ShoesAppCommon;
 using ShoesAppEntities;
-using ShoesAppCommon;
+using System.Collections.Generic;
 namespace ShoesAppData
 {
     public class Data
@@ -17,6 +13,56 @@ namespace ShoesAppData
             return Common.SerializeJson<IEnumerable<ACOB_SearchByIdOrName_Result>, List<Productos>>(obj);
         }
 
+        public static void InsertProduct(Productos prod)
+        { 
 
+            model.ACOB_InsertProduct(
+                prod.IdType,
+                prod.IdColor,
+                prod.IdBrand,
+                prod.IdProvider,
+                prod.IdCatalog,
+                prod.Title,
+                prod.Nombre,
+                prod.Description,
+                prod.Observations,
+                prod.PriceDistributor,
+                prod.PriceClient,
+                prod.PriceMember,
+                prod.IsEnabled,
+                prod.Keywords,
+                prod.DateUpdate
+                );
+        }
+
+    public static void UpdateProduct(Productos prod)
+    {
+        model.ACOB_UpdateProduct(
+            prod.Id,
+            prod.IdType,
+            prod.IdColor,
+            prod.IdBrand,
+            prod.IdProvider,
+            prod.IdCatalog,
+            prod.Title,
+            prod.Nombre,
+            prod.Description,
+            prod.Observations,
+            prod.PriceDistributor,
+            prod.PriceClient,
+            prod.PriceMember,
+            prod.IsEnabled,
+            prod.Keywords,
+            prod.DateUpdate
+            );
     }
+
+    public static void LogicalDelete(int id)
+    {
+        model.ACOB_DeleteProd(id);
+    }
+
+
+
+}
 }

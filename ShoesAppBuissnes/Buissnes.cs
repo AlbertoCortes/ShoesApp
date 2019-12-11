@@ -14,5 +14,20 @@ namespace ShoesAppBuissnes
         {
             return Data.SearchProducts(id, name);
         }
+
+        public void InsertProductos(Productos prod)
+        {
+            Data.InsertProduct(prod);
+        }
+
+        public void UpdateProductos(Productos prod)
+        {
+            Data.UpdateProduct(prod);
+        }
+
+        public void DeleteProductos(int id)
+        {
+            Data.LogicalDelete(id);
+        }
     }
 }
