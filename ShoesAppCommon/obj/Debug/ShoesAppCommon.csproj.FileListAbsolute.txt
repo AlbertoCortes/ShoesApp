@@ -1,0 +1,13 @@
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\ShoesAppCommon.dll.config
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\ShoesAppCommon.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\ShoesAppCommon.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\EntityFramework.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\EntityFramework.xml
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.csproj.CoreCompileInputs.cache
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.csproj.CopyComplete
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.pdb

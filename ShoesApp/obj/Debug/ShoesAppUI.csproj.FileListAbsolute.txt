@@ -1,0 +1,16 @@
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesApp.exe.config
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesApp.exe
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesApp.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\EntityFramework.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\EntityFramework.xml
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesAppUI.csprojAssemblyReference.cache
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.Properties.Resources.resources
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesAppUI.csproj.GenerateResource.cache
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesAppUI.csproj.CoreCompileInputs.cache
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesAppUI.csproj.CopyComplete
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.exe
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.pdb

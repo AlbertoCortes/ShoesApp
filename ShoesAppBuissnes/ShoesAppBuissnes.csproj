@@ -54,12 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Buissnes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShoesAppData\ShoesAppData.csproj">
+      <Project>{d2db39bf-5fd7-40ed-b9d0-1e5673fe59d8}</Project>
+      <Name>ShoesAppData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShoesAppEntities\ShoesAppEntities.csproj">
+      <Project>{3f9b307c-664d-4894-8196-5847486b3df5}</Project>
+      <Name>ShoesAppEntities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
