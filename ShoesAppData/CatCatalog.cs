@@ -12,25 +12,24 @@ namespace ShoesAppData
     using System;
     using System.Collections.Generic;
     
-    public partial class CatBrands
+    public partial class CatCatalog
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CatBrands()
+        public CatCatalog()
         {
-            this.ImagesProduct = new HashSet<ImagesProduct>();
-            this.Products = new HashSet<Products>();
+            this.Products = new HashSet<Product>();
         }
     
-        public int IdBrand { get; set; }
-        public string Code { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public int IdCatalog { get; set; }
+        public Nullable<int> IdProvider { get; set; }
+        public string Season { get; set; }
+        public Nullable<System.DateTime> StarActiveDate { get; set; }
+        public Nullable<System.DateTime> EndActiveDate { get; set; }
+        public Nullable<System.DateTime> DateUpdate { get; set; }
         public bool IsEnabled { get; set; }
-        public System.DateTime DateUpdate { get; set; }
     
+        public virtual CatProvider CatProvider { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ImagesProduct> ImagesProduct { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Products> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="DataProductsModelStoreContainer" CdmEntityContainer="DataProductsEntities">
     <EntitySetMapping Name="CatBrands">
-      <EntityTypeMapping TypeName="DataProductsModel.CatBrands">
+      <EntityTypeMapping TypeName="DataProductsModel.CatBrand">
         <MappingFragment StoreEntitySet="CatBrands">
           <ScalarProperty Name="IdBrand" ColumnName="IdBrand" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -14,7 +14,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CatCatalogs">
-      <EntityTypeMapping TypeName="DataProductsModel.CatCatalogs">
+      <EntityTypeMapping TypeName="DataProductsModel.CatCatalog">
         <MappingFragment StoreEntitySet="CatCatalogs">
           <ScalarProperty Name="IdCatalog" ColumnName="IdCatalog" />
           <ScalarProperty Name="IdProvider" ColumnName="IdProvider" />
@@ -27,7 +27,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CatColors">
-      <EntityTypeMapping TypeName="DataProductsModel.CatColors">
+      <EntityTypeMapping TypeName="DataProductsModel.CatColor">
         <MappingFragment StoreEntitySet="CatColors">
           <ScalarProperty Name="IdColor" ColumnName="IdColor" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -38,7 +38,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CatProviders">
-      <EntityTypeMapping TypeName="DataProductsModel.CatProviders">
+      <EntityTypeMapping TypeName="DataProductsModel.CatProvider">
         <MappingFragment StoreEntitySet="CatProviders">
           <ScalarProperty Name="IdProvider" ColumnName="IdProvider" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -50,7 +50,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CatRatings">
-      <EntityTypeMapping TypeName="DataProductsModel.CatRatings">
+      <EntityTypeMapping TypeName="DataProductsModel.CatRating">
         <MappingFragment StoreEntitySet="CatRatings">
           <ScalarProperty Name="IdRating" ColumnName="IdRating" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -59,7 +59,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CatSizes">
-      <EntityTypeMapping TypeName="DataProductsModel.CatSizes">
+      <EntityTypeMapping TypeName="DataProductsModel.CatSize">
         <MappingFragment StoreEntitySet="CatSizes">
           <ScalarProperty Name="IdSize" ColumnName="IdSize" />
           <ScalarProperty Name="IdType" ColumnName="IdType" />
@@ -71,7 +71,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CatTypeDetails">
-      <EntityTypeMapping TypeName="DataProductsModel.CatTypeDetails">
+      <EntityTypeMapping TypeName="DataProductsModel.CatTypeDetail">
         <MappingFragment StoreEntitySet="CatTypeDetails">
           <ScalarProperty Name="IdTypeDetail" ColumnName="IdTypeDetail" />
           <ScalarProperty Name="IdType" ColumnName="IdType" />
@@ -81,7 +81,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="CatTypeProduct">
+    <EntitySetMapping Name="CatTypeProducts">
       <EntityTypeMapping TypeName="DataProductsModel.CatTypeProduct">
         <MappingFragment StoreEntitySet="CatTypeProduct">
           <ScalarProperty Name="IdType" ColumnName="IdType" />
@@ -93,14 +93,14 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Comments">
-      <EntityTypeMapping TypeName="DataProductsModel.Comments">
+      <EntityTypeMapping TypeName="DataProductsModel.Comment">
         <MappingFragment StoreEntitySet="Comments">
           <ScalarProperty Name="IdComent" ColumnName="IdComent" />
           <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
           <ScalarProperty Name="IdRating" ColumnName="IdRating" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Comment1" ColumnName="Comment" />
           <ScalarProperty Name="DateCommnet" ColumnName="DateCommnet" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -129,7 +129,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DetailProduct">
+    <EntitySetMapping Name="DetailProducts">
       <EntityTypeMapping TypeName="DataProductsModel.DetailProduct">
         <MappingFragment StoreEntitySet="DetailProduct">
           <ScalarProperty Name="IdDetail" ColumnName="IdDetail" />
@@ -140,11 +140,11 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ImagesProduct">
+    <EntitySetMapping Name="ImagesProducts">
       <EntityTypeMapping TypeName="DataProductsModel.ImagesProduct">
         <MappingFragment StoreEntitySet="ImagesProduct">
-          <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
           <ScalarProperty Name="IdImage" ColumnName="IdImage" />
+          <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
           <ScalarProperty Name="Decription" ColumnName="Decription" />
           <ScalarProperty Name="Image" ColumnName="Image" />
           <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
@@ -153,7 +153,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="DataProductsModel.Products">
+      <EntityTypeMapping TypeName="DataProductsModel.Product">
         <MappingFragment StoreEntitySet="Products">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="IdType" ColumnName="IdType" />
@@ -174,7 +174,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Qualification">
+    <EntitySetMapping Name="Qualifications">
       <EntityTypeMapping TypeName="DataProductsModel.Qualification">
         <MappingFragment StoreEntitySet="Qualification">
           <ScalarProperty Name="Id" ColumnName="Id" />
@@ -185,7 +185,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="SimilarProduct">
+    <EntitySetMapping Name="SimilarProducts">
       <EntityTypeMapping TypeName="DataProductsModel.SimilarProduct">
         <MappingFragment StoreEntitySet="SimilarProduct">
           <ScalarProperty Name="IdSimilarProduct" ColumnName="IdSimilarProduct" />
@@ -194,7 +194,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="SizeForProduct">
+    <EntitySetMapping Name="SizeForProducts">
       <EntityTypeMapping TypeName="DataProductsModel.SizeForProduct">
         <MappingFragment StoreEntitySet="SizeForProduct">
           <ScalarProperty Name="IdSizeProduct" ColumnName="IdSizeProduct" />
@@ -204,7 +204,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="DataProductsModel.sysdiagrams">
+      <EntityTypeMapping TypeName="DataProductsModel.sysdiagram">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />

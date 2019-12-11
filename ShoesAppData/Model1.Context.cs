@@ -27,24 +27,24 @@ namespace ShoesAppData
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<CatBrands> CatBrands { get; set; }
-        public virtual DbSet<CatCatalogs> CatCatalogs { get; set; }
-        public virtual DbSet<CatColors> CatColors { get; set; }
-        public virtual DbSet<CatProviders> CatProviders { get; set; }
-        public virtual DbSet<CatRatings> CatRatings { get; set; }
-        public virtual DbSet<CatSizes> CatSizes { get; set; }
-        public virtual DbSet<CatTypeDetails> CatTypeDetails { get; set; }
-        public virtual DbSet<CatTypeProduct> CatTypeProduct { get; set; }
-        public virtual DbSet<Comments> Comments { get; set; }
+        public virtual DbSet<CatBrand> CatBrands { get; set; }
+        public virtual DbSet<CatCatalog> CatCatalogs { get; set; }
+        public virtual DbSet<CatColor> CatColors { get; set; }
+        public virtual DbSet<CatProvider> CatProviders { get; set; }
+        public virtual DbSet<CatRating> CatRatings { get; set; }
+        public virtual DbSet<CatSize> CatSizes { get; set; }
+        public virtual DbSet<CatTypeDetail> CatTypeDetails { get; set; }
+        public virtual DbSet<CatTypeProduct> CatTypeProducts { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<database_firewall_rules> database_firewall_rules { get; set; }
         public virtual DbSet<database_firewall_rules1> database_firewall_rules1 { get; set; }
-        public virtual DbSet<DetailProduct> DetailProduct { get; set; }
-        public virtual DbSet<ImagesProduct> ImagesProduct { get; set; }
-        public virtual DbSet<Products> Products { get; set; }
-        public virtual DbSet<Qualification> Qualification { get; set; }
-        public virtual DbSet<SimilarProduct> SimilarProduct { get; set; }
-        public virtual DbSet<SizeForProduct> SizeForProduct { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<DetailProduct> DetailProducts { get; set; }
+        public virtual DbSet<ImagesProduct> ImagesProducts { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Qualification> Qualifications { get; set; }
+        public virtual DbSet<SimilarProduct> SimilarProducts { get; set; }
+        public virtual DbSet<SizeForProduct> SizeForProducts { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     
         public virtual int ACOB_DeleteProd(Nullable<int> iD)
         {

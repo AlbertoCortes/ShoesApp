@@ -12,17 +12,12 @@ namespace ShoesAppData
     using System;
     using System.Collections.Generic;
     
-    public partial class Comments
+    public partial class sysdiagram
     {
-        public int IdComent { get; set; }
-        public int IdProduct { get; set; }
-        public int IdRating { get; set; }
-        public string UserName { get; set; }
-        public string Name { get; set; }
-        public string Comment { get; set; }
-        public System.DateTime DateCommnet { get; set; }
-    
-        public virtual CatRatings CatRatings { get; set; }
-        public virtual Products Products { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
