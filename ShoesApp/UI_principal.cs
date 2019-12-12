@@ -46,11 +46,16 @@ namespace ShoesApp
             dtg_productos.Rows.Clear();
             foreach (var item in prod)
             {
-                DataGridViewRow row = new DataGridViewRow();
-                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Nombre });
-                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Description });
-                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.PriceClient });
-                dtg_productos.Rows.Add(row);
+                if (item.IsEnabled)
+                {
+                    DataGridViewRow row = new DataGridViewRow();
+                    row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Id });
+                    row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Nombre });
+                    row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Description });
+                    row.Cells.Add(new DataGridViewTextBoxCell { Value = item.PriceClient });
+
+                    dtg_productos.Rows.Add(row);
+                }
             }
         }
 
@@ -62,6 +67,30 @@ namespace ShoesApp
         private void UI_principal_Load(object sender, EventArgs e)
         {
             buscar(0, "%" + txt_buscar_name.Text + "%");
+        }
+
+        private void dtg_productos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex == 5)
+            {
+                MessageBox.Show("Estoy en Editar");
+            }
+            else if(e.ColumnIndex == 6)
+            {
+                if (MessageBox.Show("Eliminar producto", "Confirmar",
+                MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    int id = Int32.Parse(dtg_productos.CurrentRow.Cells["Id"].Value.ToString());
+                    buissnes.DeleteProductos(id);
+                    MessageBox.Show("Producto Eliminado");
+                }
+            }
+        }
+
+        private void bnt_agregar_Click(object sender, EventArgs e)
+        {
+            UI_agregar frm_agregar = new UI_agregar();
+            frm_agregar.Show();
         }
 
         public UI_principal()

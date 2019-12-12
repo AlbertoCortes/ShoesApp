@@ -201,5 +201,15 @@ namespace ShoesAppData
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ACOB_UpdateProduct", idParameter, idTypeParameter, idColorParameter, idBrandParameter, idProviderParameter, idCatalogParameter, titleParameter, nombreParameter, descriptionParameter, observationsParameter, priceDistributorParameter, priceClientParameter, priceMemberParameter, isEnabledParameter, keywordsParameter, dateUpdateParameter);
         }
+    
+        public virtual ObjectResult<ACOB_GetColors_Result> ACOB_GetColors()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ACOB_GetColors_Result>("ACOB_GetColors");
+        }
+    
+        public virtual ObjectResult<ACOB_GetSizes_Result> ACOB_GetSizes()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ACOB_GetSizes_Result>("ACOB_GetSizes");
+        }
     }
 }

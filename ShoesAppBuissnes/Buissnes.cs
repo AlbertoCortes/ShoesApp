@@ -29,5 +29,27 @@ namespace ShoesAppBuissnes
         {
             Data.LogicalDelete(id);
         }
+
+        public List<Colores> GetColores()
+        {
+            return Data.GetColors();
+        }
+
+        public int GetColorId(String nameIn)
+        {
+            List<Colores> ListaColores = new List<Colores>();
+            ListaColores.AddRange(Data.GetColors());
+
+            int Id = (from n in ListaColores
+                     where n.Name == nameIn
+                     select n.IdColor).FirstOrDefault();
+            return Id;
+        }
+
+
+        public List<Tallas> GetTallas()
+        {
+            return Data.GetSizes();
+        }
     }
 }

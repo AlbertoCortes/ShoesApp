@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UI_agregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_agregar.Designer.cs">
+      <DependentUpon>UI_agregar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI_agregar.resx">
+      <DependentUpon>UI_agregar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI_principal.resx">
       <DependentUpon>UI_principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -102,6 +112,24 @@
       <Project>{3f9b307c-664d-4894-8196-5847486b3df5}</Project>
       <Name>ShoesAppEntities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Notes_132293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_View_132429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Delete_132192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Add_132496.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Erase_132565.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

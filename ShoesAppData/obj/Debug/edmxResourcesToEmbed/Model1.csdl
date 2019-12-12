@@ -590,6 +590,8 @@
       <Parameter Name="Keywords" Mode="In" Type="String" />
       <Parameter Name="DateUpdate" Mode="In" Type="DateTime" />
     </FunctionImport>
+    <FunctionImport Name="ACOB_GetColors" ReturnType="Collection(DataProductsModel.ACOB_GetColors_Result)" />
+    <FunctionImport Name="ACOB_GetSizes" ReturnType="Collection(DataProductsModel.ACOB_GetSizes_Result)" />
   </EntityContainer>
   <ComplexType Name="ACOB_SearchByIdOrName_Result">
     <Property Type="Int32" Name="Id" Nullable="false" />
@@ -608,5 +610,20 @@
     <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
     <Property Type="String" Name="Keywords" Nullable="true" />
     <Property Type="DateTime" Name="DateUpdate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="ACOB_GetColors_Result">
+    <Property Type="Int32" Name="IdColor" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" />
+    <Property Type="String" Name="HexaDecimal" Nullable="false" />
+    <Property Type="Boolean" Name="IsEnable" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ACOB_GetSizes_Result">
+    <Property Type="Int32" Name="IdSize" Nullable="false" />
+    <Property Type="Int32" Name="IdType" Nullable="false" />
+    <Property Type="String" Name="Code" Nullable="false" />
+    <Property Type="String" Name="Unity" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" />
+    <Property Type="String" Name="Value" Nullable="false" />
   </ComplexType>
 </Schema>

@@ -27,3 +27,4 @@ C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppData.pdb
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppData.dll.config
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppCommon.pdb
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppCommon.dll.config
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_agregar.resources

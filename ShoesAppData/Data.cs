@@ -13,6 +13,19 @@ namespace ShoesAppData
             return Common.SerializeJson<IEnumerable<ACOB_SearchByIdOrName_Result>, List<Productos>>(obj);
         }
 
+        public static List<Colores> GetColors()
+        {
+            var obj = model.ACOB_GetColors();
+            return Common.SerializeJson<IEnumerable<ACOB_GetColors_Result>, List<Colores>>(obj);
+        }
+
+        public static List<Tallas> GetSizes()
+        {
+            var obj = model.ACOB_GetSizes();
+            return Common.SerializeJson<IEnumerable<ACOB_GetSizes_Result>,List<Tallas>>(obj);
+        }
+
+
         public static void InsertProduct(Productos prod)
         { 
 
