@@ -14,3 +14,16 @@ C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesAppUI.csproj.
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesAppUI.csproj.CopyComplete
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.exe
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_principal.resources
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppBuissnes.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppEntities.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppData.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppCommon.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppBuissnes.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppBuissnes.dll.config
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppEntities.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppEntities.dll.config
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppData.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppData.dll.config
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppCommon.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppCommon.dll.config

@@ -14,7 +14,7 @@ namespace ShoesAppTesting
         {
             List<Productos> lista = new List<Productos>();
             Buissnes n = new Buissnes();
-            lista = n.SearchProductos(12, null);
+            lista = n.SearchProductos(0, "p");
             foreach (var item in lista)
             {
                 Console.WriteLine(item.Id);
