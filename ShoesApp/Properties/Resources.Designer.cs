@@ -63,6 +63,16 @@ namespace ShoesApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _03_37_13_july_2014_256 {
+            get {
+                object obj = ResourceManager.GetObject("03-37-13-july-2014-256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Add_132496 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Add_132496", resourceCulture);
@@ -96,6 +106,16 @@ namespace ShoesApp.Properties {
         internal static System.Drawing.Bitmap iconfinder_Notes_132293 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Notes_132293", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Tick_132261 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Tick_132261", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

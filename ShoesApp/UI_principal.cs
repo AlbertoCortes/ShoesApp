@@ -71,12 +71,20 @@ namespace ShoesApp
 
         private void dtg_productos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 5)
+           
+            if (e.ColumnIndex == 4)
+            {
+                int id = Int32.Parse(dtg_productos.CurrentRow.Cells["Id"].Value.ToString());
+                UI_verProducto frm = new UI_verProducto(id);
+                frm.Show();
+            }
+            else if(e.ColumnIndex == 5)
             {
                 MessageBox.Show("Estoy en Editar");
             }
             else if(e.ColumnIndex == 6)
             {
+
                 if (MessageBox.Show("Eliminar producto", "Confirmar",
                 MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
@@ -91,6 +99,17 @@ namespace ShoesApp
         {
             UI_agregar frm_agregar = new UI_agregar();
             frm_agregar.Show();
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UI_agregar_imagen frm = new UI_agregar_imagen();
+            frm.Show();
         }
 
         public UI_principal()

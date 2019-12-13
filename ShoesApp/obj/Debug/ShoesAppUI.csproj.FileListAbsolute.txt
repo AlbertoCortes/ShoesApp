@@ -28,3 +28,6 @@ C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppData.dll.c
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppCommon.pdb
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\bin\Debug\ShoesAppCommon.dll.config
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_agregar.resources
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_verProducto.resources
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_agregar_imagen.resources
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_editar_producto.resources

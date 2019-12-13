@@ -1,4 +1,5 @@
-﻿using ShoesAppCommon;
+﻿
+using ShoesAppCommon;
 using ShoesAppEntities;
 using System.Collections.Generic;
 namespace ShoesAppData
@@ -25,7 +26,16 @@ namespace ShoesAppData
             return Common.SerializeJson<IEnumerable<ACOB_GetSizes_Result>,List<Tallas>>(obj);
         }
 
-
+        public static void InsertImages(Imagenes imag)
+        {
+            model.ACOB_InsertImages(
+                imag.IdProduct,
+                imag.Decription,
+                imag.Image,
+                imag.DateUpdate,
+                imag.IsEnabled
+                );
+        }
         public static void InsertProduct(Productos prod)
         { 
 
@@ -75,7 +85,10 @@ namespace ShoesAppData
         model.ACOB_DeleteProd(id);
     }
 
-
-
+    public static List<Imagenes> GetImagenes(int id)
+        {
+            var obj = model.ACOB_GetImages1(id);
+            return Common.SerializeJson<IEnumerable<ACOB_GetImages1_Result>, List<Imagenes>>(obj);
+        }
 }
 }

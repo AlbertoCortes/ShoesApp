@@ -592,6 +592,22 @@
     </FunctionImport>
     <FunctionImport Name="ACOB_GetColors" ReturnType="Collection(DataProductsModel.ACOB_GetColors_Result)" />
     <FunctionImport Name="ACOB_GetSizes" ReturnType="Collection(DataProductsModel.ACOB_GetSizes_Result)" />
+    <FunctionImport Name="ACOB_GetImages" ReturnType="Collection(Binary)">
+      <Parameter Name="idProduct" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ACOB_GetAImages" ReturnType="Collection(DataProductsModel.ACOB_GetAImages_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ACOB_GetImages1" ReturnType="Collection(DataProductsModel.ACOB_GetImages1_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ACOB_InsertImages">
+      <Parameter Name="idProduct" Mode="In" Type="Int32" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+      <Parameter Name="Image" Mode="In" Type="Binary" />
+      <Parameter Name="DateUpdate" Mode="In" Type="DateTime" />
+      <Parameter Name="IsEnable" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="ACOB_SearchByIdOrName_Result">
     <Property Type="Int32" Name="Id" Nullable="false" />
@@ -625,5 +641,21 @@
     <Property Type="String" Name="Unity" Nullable="false" />
     <Property Type="String" Name="Description" Nullable="false" />
     <Property Type="String" Name="Value" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ACOB_GetAImages_Result">
+    <Property Type="Int32" Name="IdImage" Nullable="false" />
+    <Property Type="Int32" Name="IdProduct" Nullable="false" />
+    <Property Type="String" Name="Decription" Nullable="false" />
+    <Property Type="Binary" Name="Image" Nullable="false" />
+    <Property Type="DateTime" Name="DateUpdate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="IsEnabled" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ACOB_GetImages1_Result">
+    <Property Type="Int32" Name="IdImage" Nullable="false" />
+    <Property Type="Int32" Name="IdProduct" Nullable="false" />
+    <Property Type="String" Name="Decription" Nullable="false" />
+    <Property Type="Binary" Name="Image" Nullable="false" />
+    <Property Type="DateTime" Name="DateUpdate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="IsEnabled" Nullable="false" />
   </ComplexType>
 </Schema>

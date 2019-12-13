@@ -65,6 +65,18 @@
     <Compile Include="UI_agregar.Designer.cs">
       <DependentUpon>UI_agregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI_agregar_imagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_agregar_imagen.Designer.cs">
+      <DependentUpon>UI_agregar_imagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_editar_producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_editar_producto.Designer.cs">
+      <DependentUpon>UI_editar_producto.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,8 +85,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI_verProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_verProducto.Designer.cs">
+      <DependentUpon>UI_verProducto.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="UI_agregar.resx">
       <DependentUpon>UI_agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_agregar_imagen.resx">
+      <DependentUpon>UI_agregar_imagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_editar_producto.resx">
+      <DependentUpon>UI_editar_producto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI_principal.resx">
       <DependentUpon>UI_principal.cs</DependentUpon>
@@ -89,6 +113,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI_verProducto.resx">
+      <DependentUpon>UI_verProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -130,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_Erase_132565.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Tick_132261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-37-13-july-2014-256.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

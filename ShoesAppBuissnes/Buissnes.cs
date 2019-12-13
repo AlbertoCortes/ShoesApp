@@ -19,6 +19,11 @@ namespace ShoesAppBuissnes
         {
             Data.InsertProduct(prod);
         }
+        
+        public void InsertImages(Imagenes imag)
+        {
+            Data.InsertImages(imag);
+        }
 
         public void UpdateProductos(Productos prod)
         {
@@ -50,6 +55,11 @@ namespace ShoesAppBuissnes
         public List<Tallas> GetTallas()
         {
             return Data.GetSizes();
+        }
+
+        public List<Imagenes> GetImagenes(int id)
+        {
+            return Data.GetImagenes(id);
         }
     }
 }
