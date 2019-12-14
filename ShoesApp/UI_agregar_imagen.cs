@@ -66,25 +66,33 @@ namespace ShoesApp
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            List<Productos> lista_productos = new List<Productos>();
-            lista_productos.AddRange(buissnes.SearchProductos(0, "%%"));
-            int id = 0;
-            foreach (var item in lista_productos)
+            try
             {
-                if (item.Nombre == cmb_producto.Text)
-                    id = item.Id;
+                List<Productos> lista_productos = new List<Productos>();
+                lista_productos.AddRange(buissnes.SearchProductos(0, "%%"));
+                int id = 0;
+                foreach (var item in lista_productos)
+                {
+                    if (item.Nombre == cmb_producto.Text)
+                        id = item.Id;
 
+                }
+                Imagenes imagen = new Imagenes
+                {
+                    IdProduct = id,
+                    Decription = txt_desc.Text,
+                    Image = GetBytesFromImage(txt_image.Text),
+                    DateUpdate = DateTime.Now,
+                    IsEnabled = true
+
+                };
+
+                buissnes.InsertImages(imagen);
+                MessageBox.Show("Imagen Agregada");
             }
-                Imagenes imagen = new Imagenes {
-                IdProduct = id,
-                Decription = txt_desc.Text,
-                Image = GetBytesFromImage(txt_image.Text),
-                DateUpdate = DateTime.Now,
-                IsEnabled = "true"
-                
-            };
+            catch { MessageBox.Show("Error al agregar imagen"); }
 
-            buissnes.InsertImages(imagen);
+            this.Close();
         
         }
 

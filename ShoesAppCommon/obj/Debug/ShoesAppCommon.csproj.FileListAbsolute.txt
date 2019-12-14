@@ -11,4 +11,3 @@ C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppComm
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.csproj.CopyComplete
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.dll
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.pdb
-C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppCommon\obj\Debug\ShoesAppCommon.csprojAssemblyReference.cache

@@ -80,7 +80,10 @@ namespace ShoesApp
             }
             else if(e.ColumnIndex == 5)
             {
-                MessageBox.Show("Estoy en Editar");
+                int id = Int32.Parse(dtg_productos.CurrentRow.Cells["Id"].Value.ToString());
+
+                UI_editar_producto frm = new UI_editar_producto(id);
+                frm.Show();
             }
             else if(e.ColumnIndex == 6)
             {
@@ -110,6 +113,17 @@ namespace ShoesApp
         {
             UI_agregar_imagen frm = new UI_agregar_imagen();
             frm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            IU_agregar_color frm = new IU_agregar_color();
+            frm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         public UI_principal()

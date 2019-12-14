@@ -39,19 +39,27 @@ namespace ShoesApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Productos prod = new Productos {
-                IdColor = buissnes.GetColorId(cmb_color.Text),
-                Title = txt_nombre.Text,
-                Nombre = txt_nombre.Text,
-                Description = txt_descripcion.Text,
-                Observations = txt_descripcion.Text,
-                PriceDistributor = int.Parse(txt_precio_dist.Text),
-                PriceClient = int.Parse(txt_precio_publico.Text),
-                IsEnabled = true,
-                DateUpdate = DateTime.Now
-
-        };
-            buissnes.InsertProductos(prod);
+            try
+            {
+                Productos prod = new Productos
+                {
+                    IdColor = buissnes.GetColorId(cmb_color.Text),
+                    Title = txt_nombre.Text,
+                    Nombre = txt_nombre.Text,
+                    Description = txt_descripcion.Text,
+                    Observations = txt_descripcion.Text,
+                    PriceDistributor = int.Parse(txt_precio_dist.Text),
+                    PriceClient = int.Parse(txt_precio_publico.Text),
+                    IsEnabled = true,
+                    DateUpdate = DateTime.Now
+                };
+                buissnes.InsertProductos(prod);
+                MessageBox.Show("Producto Agregado");
+            }
+            catch {
+                MessageBox.Show("Error al agregar producto");
+            }
+            this.Close();
         }
     }
 }

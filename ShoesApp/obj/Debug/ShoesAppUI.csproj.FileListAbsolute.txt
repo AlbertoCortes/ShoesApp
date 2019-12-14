@@ -31,3 +31,4 @@ C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_agrega
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_verProducto.resources
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_agregar_imagen.resources
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.UI_editar_producto.resources
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesApp\obj\Debug\ShoesApp.IU_agregar_color.resources

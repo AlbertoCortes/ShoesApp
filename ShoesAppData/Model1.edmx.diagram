@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="69ae6d54fc2b4cc2bb8a905854a6c439" Name="Diagram1">
+      <Diagram DiagramId="26e20978c2324763afb25bd856b9a067" Name="Diagram1">
         <EntityTypeShape EntityType="DataProductsModel.CatBrand" Width="1.5" PointX="5.75" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="DataProductsModel.CatCatalog" Width="1.5" PointX="5.75" PointY="14.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DataProductsModel.CatColor" Width="1.5" PointX="5.75" PointY="17.875" IsExpanded="true" />
@@ -23,6 +23,7 @@
         <EntityTypeShape EntityType="DataProductsModel.SimilarProduct" Width="1.5" PointX="10.25" PointY="18" IsExpanded="true" />
         <EntityTypeShape EntityType="DataProductsModel.SizeForProduct" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DataProductsModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataProductsModel.database_firewall_rules2" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <AssociationConnector Association="DataProductsModel.FK_CatBrandsProducts" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_CatCatalogsCatProviders" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_CatCatalogsProducts" ManuallyRouted="false" />
@@ -37,7 +38,7 @@
         <AssociationConnector Association="DataProductsModel.FK_CatTypeProductProducts" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_ProductsComments" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_ProductsDetailProduct" ManuallyRouted="false" />
-        <AssociationConnector Association="DataProductsModel.FK_ProductsImagesProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="DataProductsModel.FK_IDProducto" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_ProductsSimilarProduct" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_ProductsSizeForProduct" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_QualificationProducts" ManuallyRouted="false" />

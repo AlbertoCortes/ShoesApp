@@ -52,6 +52,7 @@
             this.cmb_tallas = new System.Windows.Forms.ComboBox();
             this.txt_color = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1233, 59);
+            this.panel1.Size = new System.Drawing.Size(1026, 59);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -170,6 +171,7 @@
             // 
             // txt_id
             // 
+            this.txt_id.Enabled = false;
             this.txt_id.Location = new System.Drawing.Point(230, 88);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(100, 26);
@@ -177,6 +179,7 @@
             // 
             // txt_nombre
             // 
+            this.txt_nombre.Enabled = false;
             this.txt_nombre.Location = new System.Drawing.Point(230, 134);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(293, 26);
@@ -184,6 +187,7 @@
             // 
             // txt_descripcion
             // 
+            this.txt_descripcion.Enabled = false;
             this.txt_descripcion.Location = new System.Drawing.Point(230, 189);
             this.txt_descripcion.Multiline = true;
             this.txt_descripcion.Name = "txt_descripcion";
@@ -192,6 +196,7 @@
             // 
             // txt_observaciones
             // 
+            this.txt_observaciones.Enabled = false;
             this.txt_observaciones.Location = new System.Drawing.Point(230, 274);
             this.txt_observaciones.Multiline = true;
             this.txt_observaciones.Name = "txt_observaciones";
@@ -200,6 +205,7 @@
             // 
             // txt_precioDist
             // 
+            this.txt_precioDist.Enabled = false;
             this.txt_precioDist.Location = new System.Drawing.Point(230, 356);
             this.txt_precioDist.Name = "txt_precioDist";
             this.txt_precioDist.Size = new System.Drawing.Size(100, 26);
@@ -207,6 +213,7 @@
             // 
             // txt_precioCli
             // 
+            this.txt_precioCli.Enabled = false;
             this.txt_precioCli.Location = new System.Drawing.Point(230, 406);
             this.txt_precioCli.Name = "txt_precioCli";
             this.txt_precioCli.Size = new System.Drawing.Size(100, 26);
@@ -214,6 +221,7 @@
             // 
             // txt_precioEmp
             // 
+            this.txt_precioEmp.Enabled = false;
             this.txt_precioEmp.Location = new System.Drawing.Point(230, 453);
             this.txt_precioEmp.Name = "txt_precioEmp";
             this.txt_precioEmp.Size = new System.Drawing.Size(100, 26);
@@ -221,6 +229,7 @@
             // 
             // txt_habilitado
             // 
+            this.txt_habilitado.Enabled = false;
             this.txt_habilitado.Location = new System.Drawing.Point(230, 502);
             this.txt_habilitado.Name = "txt_habilitado";
             this.txt_habilitado.Size = new System.Drawing.Size(100, 26);
@@ -228,6 +237,7 @@
             // 
             // txt_fecha_modig
             // 
+            this.txt_fecha_modig.Enabled = false;
             this.txt_fecha_modig.Location = new System.Drawing.Point(230, 556);
             this.txt_fecha_modig.Name = "txt_fecha_modig";
             this.txt_fecha_modig.Size = new System.Drawing.Size(293, 26);
@@ -238,11 +248,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label10.Location = new System.Drawing.Point(593, 137);
+            this.label10.Location = new System.Drawing.Point(697, 140);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(156, 20);
+            this.label10.Size = new System.Drawing.Size(52, 20);
             this.label10.TabIndex = 20;
-            this.label10.Text = "Tallas disponibles:";
+            this.label10.Text = "Talla:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
@@ -259,6 +269,7 @@
             // 
             // cmb_tallas
             // 
+            this.cmb_tallas.Enabled = false;
             this.cmb_tallas.FormattingEnabled = true;
             this.cmb_tallas.Location = new System.Drawing.Point(766, 137);
             this.cmb_tallas.Name = "cmb_tallas";
@@ -267,6 +278,7 @@
             // 
             // txt_color
             // 
+            this.txt_color.Enabled = false;
             this.txt_color.Location = new System.Drawing.Point(766, 189);
             this.txt_color.Name = "txt_color";
             this.txt_color.Size = new System.Drawing.Size(231, 26);
@@ -282,12 +294,28 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::ShoesApp.Properties.Resources.iconfinder_Delete_132192;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(766, 486);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(230, 96);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Cancelar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // UI_verProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1233, 636);
+            this.ClientSize = new System.Drawing.Size(1026, 602);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_color);
             this.Controls.Add(this.cmb_tallas);
@@ -348,5 +376,6 @@
         private System.Windows.Forms.ComboBox cmb_tallas;
         private System.Windows.Forms.TextBox txt_color;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UI_agregar_color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_agregar_color.Designer.cs">
+      <DependentUpon>UI_agregar_color.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_agregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="UI_verProducto.Designer.cs">
       <DependentUpon>UI_verProducto.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI_agregar_color.resx">
+      <DependentUpon>UI_agregar_color.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI_agregar.resx">
       <DependentUpon>UI_agregar.cs</DependentUpon>
     </EmbeddedResource>

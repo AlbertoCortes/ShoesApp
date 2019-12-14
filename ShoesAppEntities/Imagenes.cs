@@ -8,7 +8,7 @@ namespace ShoesAppEntities
         public string Decription { get; set; }
         public byte[] Image { get; set; }
         public Nullable<System.DateTime> DateUpdate { get; set; }
-        public string IsEnabled { get; set; }
+        public bool IsEnabled { get; set; }
 
     }
 }

@@ -16,7 +16,7 @@ namespace ShoesApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI_editar_producto(41));
+            Application.Run(new UI_principal());
         }
     }
 }

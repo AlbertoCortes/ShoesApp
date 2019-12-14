@@ -19,10 +19,19 @@ namespace ShoesAppBuissnes
         {
             Data.InsertProduct(prod);
         }
+        public void InsertColor(Colores color)
+        {
+            Data.InsertColor(color);
+        }
         
         public void InsertImages(Imagenes imag)
         {
             Data.InsertImages(imag);
+        }
+
+        public void InsertProductSize(TallaPorProducto size)
+        {
+            Data.InserSizeProduct(size);
         }
 
         public void UpdateProductos(Productos prod)
@@ -49,6 +58,10 @@ namespace ShoesAppBuissnes
                      where n.Name == nameIn
                      select n.IdColor).FirstOrDefault();
             return Id;
+        }
+        public List<TallaPorProducto> GetTallaPorProductos(int id)
+        {
+            return Data.GetSizesForEachProduct(id);
         }
 
 

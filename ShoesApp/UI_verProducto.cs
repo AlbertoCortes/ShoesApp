@@ -24,11 +24,7 @@ namespace ShoesApp
         {
             InitializeComponent();
             ID = id;
-            
-           
-
         }
-
 
         public static Bitmap ByteToImage(byte[] blob)
         {
@@ -45,14 +41,15 @@ namespace ShoesApp
             fillData(ID);
             fillImages();
         }
+       
 
         public async void fillImages()
         {
-            while (true)
+            bool status = true;
+            while (status)
             {
                 List<Imagenes> lista_de_imagenes = new List<Imagenes>();
                 lista_de_imagenes.AddRange(buissnes.GetImagenes(ID));
-
                 foreach (var item in lista_de_imagenes)
                 {
                     if (item.IdProduct == ID)
@@ -60,19 +57,23 @@ namespace ShoesApp
                         pictureBox1.Image = ByteToImage(item.Image);
                         await Task.Delay(3000);
                     }
-
                 }
+                if (lista_de_imagenes.Count == 0)
+                    status = false;
             }
         }
 
         public void fillData(int id)
         {
+            List<TallaPorProducto> tallas = new List<TallaPorProducto>();
+            tallas.AddRange(buissnes.GetTallaPorProductos(id));
             List<Productos> producto = new List<Productos>();
             List<Colores> lista_colores = new List<Colores>();
-
             producto.AddRange(buissnes.SearchProductos(id, null));
-            MessageBox.Show(id.ToString() + producto.FirstOrDefault().Nombre);
+            //MessageBox.Show(id.ToString() + producto.FirstOrDefault().Nombre);
             txt_id.Text = producto.FirstOrDefault().Id.ToString();
+            if(tallas.FirstOrDefault() != null)
+                cmb_tallas.Text = tallas.FirstOrDefault().Code;
             txt_nombre.Text = producto.FirstOrDefault().Nombre;
             txt_descripcion.Text = producto.FirstOrDefault().Description;
             txt_observaciones.Text = producto.FirstOrDefault().Observations;
@@ -81,7 +82,6 @@ namespace ShoesApp
             txt_precioEmp.Text = producto.FirstOrDefault().PriceMember.ToString();
             txt_habilitado.Text = producto.FirstOrDefault().IsEnabled.ToString();
             txt_fecha_modig.Text = producto.FirstOrDefault().DateUpdate.ToString();
-
             lista_colores.AddRange(buissnes.GetColores());
             foreach (var item in lista_colores)
             {
@@ -90,6 +90,11 @@ namespace ShoesApp
                     txt_color.Text = item.Name;
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 

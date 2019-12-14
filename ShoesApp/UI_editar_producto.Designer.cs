@@ -47,7 +47,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_color = new System.Windows.Forms.TextBox();
             this.cmb_tallas = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -237,13 +236,6 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "ID:";
             // 
-            // txt_color
-            // 
-            this.txt_color.Location = new System.Drawing.Point(747, 126);
-            this.txt_color.Name = "txt_color";
-            this.txt_color.Size = new System.Drawing.Size(231, 26);
-            this.txt_color.TabIndex = 41;
-            // 
             // cmb_tallas
             // 
             this.cmb_tallas.FormattingEnabled = true;
@@ -319,7 +311,7 @@
             // cmb_color
             // 
             this.cmb_color.FormattingEnabled = true;
-            this.cmb_color.Location = new System.Drawing.Point(747, 159);
+            this.cmb_color.Location = new System.Drawing.Point(747, 123);
             this.cmb_color.Name = "cmb_color";
             this.cmb_color.Size = new System.Drawing.Size(231, 28);
             this.cmb_color.TabIndex = 45;
@@ -333,7 +325,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_color);
             this.Controls.Add(this.cmb_tallas);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -387,7 +378,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_color;
         private System.Windows.Forms.ComboBox cmb_tallas;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;

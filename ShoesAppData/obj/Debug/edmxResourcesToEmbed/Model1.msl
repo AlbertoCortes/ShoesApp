@@ -214,8 +214,58 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="database_firewall_rules2">
+      <EntityTypeMapping TypeName="DataProductsModel.database_firewall_rules2">
+        <MappingFragment StoreEntitySet="database_firewall_rules2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="start_ip_address" ColumnName="start_ip_address" />
+          <ScalarProperty Name="end_ip_address" ColumnName="end_ip_address" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <FunctionImportMapping FunctionImportName="ACOB_DeleteProd" FunctionName="DataProductsModel.Store.ACOB_DeleteProd" />
+    <FunctionImportMapping FunctionImportName="ACOB_GetColors" FunctionName="DataProductsModel.Store.ACOB_GetColors">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DataProductsModel.ACOB_GetColors_Result">
+          <ScalarProperty Name="IdColor" ColumnName="IdColor" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HexaDecimal" ColumnName="HexaDecimal" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ACOB_GetImages" FunctionName="DataProductsModel.Store.ACOB_GetImages">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DataProductsModel.ACOB_GetImages_Result">
+          <ScalarProperty Name="IdImage" ColumnName="IdImage" />
+          <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
+          <ScalarProperty Name="Decription" ColumnName="Decription" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ACOB_GetSizes" FunctionName="DataProductsModel.Store.ACOB_GetSizes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DataProductsModel.ACOB_GetSizes_Result">
+          <ScalarProperty Name="IdSize" ColumnName="IdSize" />
+          <ScalarProperty Name="IdType" ColumnName="IdType" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Unity" ColumnName="Unity" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ACOB_InsertColor" FunctionName="DataProductsModel.Store.ACOB_InsertColor" />
+    <FunctionImportMapping FunctionImportName="ACOB_InsertImages" FunctionName="DataProductsModel.Store.ACOB_InsertImages" />
     <FunctionImportMapping FunctionImportName="ACOB_InsertProduct" FunctionName="DataProductsModel.Store.ACOB_InsertProduct" />
+    <FunctionImportMapping FunctionImportName="ACOB_InsertSize" FunctionName="DataProductsModel.Store.ACOB_InsertSize" />
     <FunctionImportMapping FunctionImportName="ACOB_SearchByIdOrName" FunctionName="DataProductsModel.Store.ACOB_SearchByIdOrName">
       <ResultMapping>
         <ComplexTypeMapping TypeName="DataProductsModel.ACOB_SearchByIdOrName_Result">
@@ -239,41 +289,15 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="ACOB_UpdateProduct" FunctionName="DataProductsModel.Store.ACOB_UpdateProduct" />
-    <FunctionImportMapping FunctionImportName="ACOB_GetColors" FunctionName="DataProductsModel.Store.ACOB_GetColors">
+    <FunctionImportMapping FunctionImportName="ACOB_GetSizeForEachProduct" FunctionName="DataProductsModel.Store.ACOB_GetSizeForEachProduct">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="DataProductsModel.ACOB_GetColors_Result">
-          <ScalarProperty Name="IdColor" ColumnName="IdColor" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="HexaDecimal" ColumnName="HexaDecimal" />
-          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="ACOB_GetSizes" FunctionName="DataProductsModel.Store.ACOB_GetSizes">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="DataProductsModel.ACOB_GetSizes_Result">
-          <ScalarProperty Name="IdSize" ColumnName="IdSize" />
-          <ScalarProperty Name="IdType" ColumnName="IdType" />
-          <ScalarProperty Name="Code" ColumnName="Code" />
-          <ScalarProperty Name="Unity" ColumnName="Unity" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Value" ColumnName="Value" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="ACOB_GetImages1" FunctionName="DataProductsModel.Store.ACOB_GetImages">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="DataProductsModel.ACOB_GetImages1_Result">
-          <ScalarProperty Name="IdImage" ColumnName="IdImage" />
+        <ComplexTypeMapping TypeName="DataProductsModel.ACOB_GetSizeForEachProduct_Result">
           <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
-          <ScalarProperty Name="Decription" ColumnName="Decription" />
-          <ScalarProperty Name="Image" ColumnName="Image" />
-          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
-          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="ACOB_InsertImages" FunctionName="DataProductsModel.Store.ACOB_InsertImages" />
+    <FunctionImportMapping FunctionImportName="ACOB_InsertSizeProduct" FunctionName="DataProductsModel.Store.ACOB_InsertSizeProduct" />
+    <FunctionImportMapping FunctionImportName="ACOB_UpdateSizeProduct" FunctionName="DataProductsModel.Store.ACOB_UpdateSizeProduct" />
   </EntityContainerMapping>
 </Mapping>

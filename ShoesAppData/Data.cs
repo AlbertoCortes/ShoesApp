@@ -26,6 +26,11 @@ namespace ShoesAppData
             return Common.SerializeJson<IEnumerable<ACOB_GetSizes_Result>,List<Tallas>>(obj);
         }
 
+        public static List<TallaPorProducto> GetSizesForEachProduct(int id) {
+            var obj = model.ACOB_GetSizeForEachProduct(id);
+            return Common.SerializeJson<IEnumerable<ACOB_GetSizeForEachProduct_Result>, List<TallaPorProducto>>(obj);
+        }
+
         public static void InsertImages(Imagenes imag)
         {
             model.ACOB_InsertImages(
@@ -36,6 +41,21 @@ namespace ShoesAppData
                 imag.IsEnabled
                 );
         }
+        public static void InsertColor(Colores color) {
+            model.ACOB_InsertColor(
+
+                color.Name,
+                color.Description,
+                color.HexaDecimal,
+                color.IsEnable
+                );
+        }
+        public static void InserSizeProduct(TallaPorProducto talla)
+        {
+            model.ACOB_InsertSizeProduct(talla.IdProduct, int.Parse(talla.Code));
+        }
+
+
         public static void InsertProduct(Productos prod)
         { 
 
@@ -87,8 +107,8 @@ namespace ShoesAppData
 
     public static List<Imagenes> GetImagenes(int id)
         {
-            var obj = model.ACOB_GetImages1(id);
-            return Common.SerializeJson<IEnumerable<ACOB_GetImages1_Result>, List<Imagenes>>(obj);
+            var obj = model.ACOB_GetImages(id);
+            return Common.SerializeJson<IEnumerable<ACOB_GetImages_Result>, List<Imagenes>>(obj);
         }
 }
 }

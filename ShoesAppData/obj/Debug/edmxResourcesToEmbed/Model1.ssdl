@@ -143,10 +143,10 @@
     </Key>
     <Property Name="IdImage" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IdProduct" Type="int" Nullable="false" />
-    <Property Name="Decription" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Image" Type="varbinary(max)" Nullable="false" />
-    <Property Name="DateUpdate" Type="datetime" />
-    <Property Name="IsEnabled" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Decription" Type="nvarchar(max)" />
+    <Property Name="Image" Type="image" Nullable="false" />
+    <Property Name="DateUpdate" Type="datetime" Nullable="false" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="Products">
     <Key>
@@ -204,6 +204,24 @@
     <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="database_firewall_rules2">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="start_ip_address" />
+      <PropertyRef Name="end_ip_address" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="modify_date" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="start_ip_address" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="end_ip_address" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="modify_date" Type="datetime" Nullable="false" />
   </EntityType>
   <Association Name="FK_CatBrandsProducts">
     <End Role="CatBrands" Type="Self.CatBrands" Multiplicity="0..1" />
@@ -337,6 +355,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_IDProducto">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="ImagesProduct" Type="Self.ImagesProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ImagesProduct">
+        <PropertyRef Name="IdProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_ProductsCatProviders">
     <End Role="CatProviders" Type="Self.CatProviders" Multiplicity="0..1" />
     <End Role="Products" Type="Self.Products" Multiplicity="*" />
@@ -369,18 +399,6 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="DetailProduct">
-        <PropertyRef Name="IdProduct" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_ProductsImagesProduct">
-    <End Role="Products" Type="Self.Products" Multiplicity="1" />
-    <End Role="ImagesProduct" Type="Self.ImagesProduct" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Products">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ImagesProduct">
         <PropertyRef Name="IdProduct" />
       </Dependent>
     </ReferentialConstraint>
@@ -428,13 +446,22 @@
   <Function Name="ACOB_GetImages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="id" Type="int" Mode="In" />
   </Function>
+  <Function Name="ACOB_GetSizeForEachProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProducto" Type="int" Mode="In" />
+  </Function>
   <Function Name="ACOB_GetSizes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ACOB_InsertColor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="desc" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="hexa" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="isEn" Type="bit" Mode="In" />
+  </Function>
   <Function Name="ACOB_InsertImages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="idProduct" Type="int" Mode="In" />
     <Parameter Name="Descripcion" Type="nvarchar(max)" Mode="In" />
     <Parameter Name="Image" Type="varbinary(max)" Mode="In" />
     <Parameter Name="DateUpdate" Type="datetime" Mode="In" />
-    <Parameter Name="IsEnable" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IsEnable" Type="bit" Mode="In" />
   </Function>
   <Function Name="ACOB_InsertProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="IdType" Type="int" Mode="In" />
@@ -452,6 +479,17 @@
     <Parameter Name="IsEnabled" Type="bit" Mode="In" />
     <Parameter Name="Keywords" Type="nvarchar(max)" Mode="In" />
     <Parameter Name="DateUpdate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="ACOB_InsertSize" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdType" Type="int" Mode="In" />
+    <Parameter Name="Code" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Unity" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Desc" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Value" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ACOB_InsertSizeProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idProduct" Type="int" Mode="In" />
+    <Parameter Name="idSize" Type="int" Mode="In" />
   </Function>
   <Function Name="ACOB_SearchByIdOrName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="Id" Type="int" Mode="In" />
@@ -475,6 +513,11 @@
     <Parameter Name="Keywords" Type="nvarchar(max)" Mode="In" />
     <Parameter Name="DateUpdate" Type="datetime" Mode="In" />
   </Function>
+  <Function Name="ACOB_UpdateSizeProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="idProduct" Type="int" Mode="In" />
+    <Parameter Name="idSize" Type="int" Mode="In" />
+  </Function>
   <EntityContainer Name="DataProductsModelStoreContainer">
     <EntitySet Name="CatBrands" EntityType="Self.CatBrands" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CatCatalogs" EntityType="Self.CatCatalogs" Schema="dbo" store:Type="Tables" />
@@ -494,6 +537,16 @@
     <EntitySet Name="SimilarProduct" EntityType="Self.SimilarProduct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SizeForProduct" EntityType="Self.SizeForProduct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="database_firewall_rules2" EntityType="Self.database_firewall_rules2" store:Type="Views" store:Schema="sys" store:Name="database_firewall_rules">
+      <DefiningQuery>SELECT 
+    [database_firewall_rules2].[id] AS [id], 
+    [database_firewall_rules2].[name] AS [name], 
+    [database_firewall_rules2].[start_ip_address] AS [start_ip_address], 
+    [database_firewall_rules2].[end_ip_address] AS [end_ip_address], 
+    [database_firewall_rules2].[create_date] AS [create_date], 
+    [database_firewall_rules2].[modify_date] AS [modify_date]
+    FROM [sys].[database_firewall_rules] AS [database_firewall_rules2]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="FK_CatBrandsProducts" Association="Self.FK_CatBrandsProducts">
       <End Role="CatBrands" EntitySet="CatBrands" />
       <End Role="Products" EntitySet="Products" />
@@ -538,6 +591,10 @@
       <End Role="CatTypeProduct" EntitySet="CatTypeProduct" />
       <End Role="Products" EntitySet="Products" />
     </AssociationSet>
+    <AssociationSet Name="FK_IDProducto" Association="Self.FK_IDProducto">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ImagesProduct" EntitySet="ImagesProduct" />
+    </AssociationSet>
     <AssociationSet Name="FK_ProductsCatProviders" Association="Self.FK_ProductsCatProviders">
       <End Role="CatProviders" EntitySet="CatProviders" />
       <End Role="Products" EntitySet="Products" />
@@ -549,10 +606,6 @@
     <AssociationSet Name="FK_ProductsDetailProduct" Association="Self.FK_ProductsDetailProduct">
       <End Role="Products" EntitySet="Products" />
       <End Role="DetailProduct" EntitySet="DetailProduct" />
-    </AssociationSet>
-    <AssociationSet Name="FK_ProductsImagesProduct" Association="Self.FK_ProductsImagesProduct">
-      <End Role="Products" EntitySet="Products" />
-      <End Role="ImagesProduct" EntitySet="ImagesProduct" />
     </AssociationSet>
     <AssociationSet Name="FK_ProductsSimilarProduct" Association="Self.FK_ProductsSimilarProduct">
       <End Role="Products" EntitySet="Products" />
