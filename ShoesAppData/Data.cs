@@ -1,6 +1,7 @@
 ﻿
 using ShoesAppCommon;
 using ShoesAppEntities;
+using System.Linq;
 using System.Collections.Generic;
 namespace ShoesAppData
 {
@@ -109,6 +110,14 @@ namespace ShoesAppData
         {
             var obj = model.ACOB_GetImages(id);
             return Common.SerializeJson<IEnumerable<ACOB_GetImages_Result>, List<Imagenes>>(obj);
+        }
+
+        public static List<Log> Watcher()
+        {
+            //List<Log> log = new List<Log>();
+            var ll = from m in model.ChangesOnProducts select m;
+            // log.AddRange(ll);
+            return Common.SerializeJson<IEnumerable<ChangesOnProduct>, List<Log>>(ll);
         }
 }
 }

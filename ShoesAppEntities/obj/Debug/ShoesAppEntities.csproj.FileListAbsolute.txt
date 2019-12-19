@@ -11,3 +11,4 @@ C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEn
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.csproj.CopyComplete
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.dll
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.csprojAssemblyReference.cache

@@ -1,0 +1,733 @@
+<?xml version="1.0"?>
+<ArrayOfProductos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Productos>
+    <Id>14</Id>
+    <IdType>2</IdType>
+    <IdColor>3</IdColor>
+    <IdBrand>94</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>nike</Title>
+    <Nombre>nike2019</Nombre>
+    <Description>Tenis para ejercicio</Description>
+    <Observations>Tenis para ejercicio</Observations>
+    <PriceDistributor>3000.0</PriceDistributor>
+    <PriceClient>4000.0</PriceClient>
+    <PriceMember>4000.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <Keywords>skmdlsad</Keywords>
+    <DateUpdate>2019-12-11T00:00:00</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>15</Id>
+    <IdType>2</IdType>
+    <IdColor>3</IdColor>
+    <IdBrand>94</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>Adidas Classic</Title>
+    <Nombre>Adidas Classic</Nombre>
+    <Description>Tenis classic</Description>
+    <Observations>Tenis classic</Observations>
+    <PriceDistributor>700.0</PriceDistributor>
+    <PriceClient>1200.0</PriceClient>
+    <PriceMember>1200.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate>2019-12-11T20:32:03.077</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>16</Id>
+    <IdType>3</IdType>
+    <IdColor>5</IdColor>
+    <IdBrand>3</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>Nike Gold</Title>
+    <Nombre>Nike Gold</Nombre>
+    <Description>Nike Gold</Description>
+    <Observations>Nike Gold</Observations>
+    <PriceDistributor>1000.0</PriceDistributor>
+    <PriceClient>1500.0</PriceClient>
+    <PriceMember>0.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <Keywords />
+    <DateUpdate>2019-12-11T21:30:09.217</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>21</Id>
+    <IdType>3</IdType>
+    <IdColor>5</IdColor>
+    <IdBrand>3</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>Nike70</Title>
+    <Nombre>Nik890</Nombre>
+    <Description>Nike880</Description>
+    <Observations>Nike880</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>100.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>22</Id>
+    <IdType>1</IdType>
+    <IdColor>1</IdColor>
+    <IdBrand>1</IdBrand>
+    <IdProvider>1</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>tst</Title>
+    <Nombre>Test :D</Nombre>
+    <Description>test chido</Description>
+    <Observations>ojalá jale</Observations>
+    <PriceDistributor>0.0</PriceDistributor>
+    <PriceClient>0.0</PriceClient>
+    <PriceMember>0.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <Keywords>entity, hugo</Keywords>
+    <DateUpdate>2019-12-10T10:40:04</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>24</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>3</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Adidasddd</Title>
+    <Nombre>Adidasddd</Nombre>
+    <Description>Bonitoseeeee</Description>
+    <Observations>Comodos</Observations>
+    <PriceDistributor>10.0</PriceDistributor>
+    <PriceClient>12.0</PriceClient>
+    <PriceMember>12.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-19T11:12:18.483</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>25</Id>
+    <IdType>1</IdType>
+    <IdColor>1</IdColor>
+    <IdBrand>1</IdBrand>
+    <IdProvider>1</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>Andrea</Title>
+    <Nombre>Ana</Nombre>
+    <Description>Tenis</Description>
+    <Observations>tamaño bebe</Observations>
+    <PriceDistributor>1000.0</PriceDistributor>
+    <PriceClient>500.0</PriceClient>
+    <PriceMember>300.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <Keywords>Tenis</Keywords>
+    <DateUpdate>2019-12-12T12:31:57</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>29</Id>
+    <IdType>1</IdType>
+    <IdColor>1</IdColor>
+    <IdBrand>1</IdBrand>
+    <IdProvider>1</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>Nike</Title>
+    <Nombre>nike</Nombre>
+    <Description>tenis</Description>
+    <Observations>tenis</Observations>
+    <PriceDistributor>120.0</PriceDistributor>
+    <PriceClient>29.0</PriceClient>
+    <PriceMember>10.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <Keywords>tenis</Keywords>
+    <DateUpdate>2019-12-02T14:48:17</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>31</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>5</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Zapato casual22222</Title>
+    <Nombre>Zapato casual22222</Nombre>
+    <Description>de vestir</Description>
+    <Observations>un zapato</Observations>
+    <PriceDistributor>80.0</PriceDistributor>
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>90.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-19T11:14:22.12</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>33</Id>
+    <IdType>2</IdType>
+    <IdColor>4</IdColor>
+    <IdBrand>94</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>zapato</Title>
+    <Nombre>los zapatos</Nombre>
+    <Description>zap</Description>
+    <Observations>son zapatos</Observations>
+    <PriceDistributor>100.0</PriceDistributor>
+    <PriceClient>90.0</PriceClient>
+    <PriceMember>80.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>zapa</Keywords>
+    <DateUpdate>2019-12-12T22:39:47.593</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>34</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>4</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>los zapatosddd</Title>
+    <Nombre>los zapatosddd</Nombre>
+    <Description>zap</Description>
+    <Observations>zp</Observations>
+    <PriceDistributor>90.0</PriceDistributor>
+    <PriceClient>30.0</PriceClient>
+    <PriceMember>10.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-19T11:07:42.933</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>35</Id>
+    <IdType>2</IdType>
+    <IdColor>4</IdColor>
+    <IdBrand>34</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>unos zapatos</Title>
+    <Nombre>zapatillos</Nombre>
+    <Description>ya me quiero dormir</Description>
+    <Observations>ahora si</Observations>
+    <PriceDistributor>20.0</PriceDistributor>
+    <PriceClient>123.0</PriceClient>
+    <PriceMember>12.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>los zap</Keywords>
+    <DateUpdate>2019-12-12T22:48:54.103</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>36</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>3</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>otros zapatoseeee</Title>
+    <Nombre>otros zapatoseeee</Nombre>
+    <Description>más</Description>
+    <Observations>zapatos</Observations>
+    <PriceDistributor>12.0</PriceDistributor>
+    <PriceClient>2.0</PriceClient>
+    <PriceMember>5.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-19T11:09:21.14</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>37</Id>
+    <IdType>1</IdType>
+    <IdColor>1</IdColor>
+    <IdBrand>1</IdBrand>
+    <IdProvider>1</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>Zapatitos</Title>
+    <Nombre>Zapatos bebe</Nombre>
+    <Description>Zapatos bebes</Description>
+    <Observations>bebes</Observations>
+    <PriceDistributor>100.0</PriceDistributor>
+    <PriceClient>50.0</PriceClient>
+    <PriceMember>25.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>bebes</Keywords>
+    <DateUpdate>2019-12-03T08:46:48</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>43</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>C</Title>
+    <Nombre>C</Nombre>
+    <Description>B</Description>
+    <Observations>K</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>1221.0</PriceClient>
+    <PriceMember>212.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>46</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>2</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Zapatosssss</Title>
+    <Nombre>Zapatosssss</Nombre>
+    <Description>KKK</Description>
+    <Observations>KKK</Observations>
+    <PriceDistributor>1000.0</PriceDistributor>
+    <PriceClient>1500.0</PriceClient>
+    <PriceMember>1499.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-13T19:38:35.877</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>48</Id>
+    <IdType>2</IdType>
+    <IdColor>5</IdColor>
+    <IdBrand>94</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>puma80</Title>
+    <Nombre>Pumas</Nombre>
+    <Description>tenis pirata</Description>
+    <Observations>son piratas</Observations>
+    <PriceDistributor>12.0</PriceDistributor>
+    <PriceClient>45.0</PriceClient>
+    <PriceMember>13.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>piraton</Keywords>
+    <DateUpdate>2019-12-13T15:46:11.99</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>49</Id>
+    <IdType>2</IdType>
+    <IdColor>5</IdColor>
+    <IdBrand>94</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>Pumas333</Title>
+    <Nombre>Pumas3</Nombre>
+    <Description>tenis pirata33</Description>
+    <Observations>tenis pirata333</Observations>
+    <PriceDistributor>12.0</PriceDistributor>
+    <PriceClient>453.0</PriceClient>
+    <PriceMember>453.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>piraton</Keywords>
+    <DateUpdate>2019-12-13T15:47:12.717</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>50</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>2</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>ZAPATOEKS</Title>
+    <Nombre>ZAPATOEKS</Nombre>
+    <Description>ZAPATP</Description>
+    <Observations>ZA</Observations>
+    <PriceDistributor>100.0</PriceDistributor>
+    <PriceClient>1000.0</PriceClient>
+    <PriceMember>1000.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate>2019-12-13T19:33:47.917</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>57</Id>
+    <IdType>1</IdType>
+    <IdColor>1</IdColor>
+    <IdBrand>1</IdBrand>
+    <IdProvider>1</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>test</Title>
+    <Nombre>test fer</Nombre>
+    <Description>test</Description>
+    <Observations>test</Observations>
+    <PriceDistributor>1000.0</PriceDistributor>
+    <PriceClient>1000.0</PriceClient>
+    <PriceMember>1000.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>test</Keywords>
+    <DateUpdate>2019-12-16T00:00:00</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>58</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>EENike70</Title>
+    <Nombre>Nik890</Nombre>
+    <Description>Nike880</Description>
+    <Observations>Nike880</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>100.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>59</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Fer</Title>
+    <Nombre>Fer</Nombre>
+    <Description>FerD</Description>
+    <Observations>FerD</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>100.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>60</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Fer</Title>
+    <Nombre>Fer</Nombre>
+    <Description>FerD</Description>
+    <Observations>FerD</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>102.0</PriceClient>
+    <PriceMember>102.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>61</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Nombre2</Title>
+    <Nombre>Nombre2</Nombre>
+    <Description>Descripcion2</Description>
+    <Observations>Descripcion2</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>2.0</PriceClient>
+    <PriceMember>2.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>62</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>RealMadrid1</Title>
+    <Nombre>RealMadrid1</Nombre>
+    <Description>Halamadrid</Description>
+    <Observations>Halamadrid</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>10.0</PriceClient>
+    <PriceMember>10.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>63</Id>
+    <IdType>2</IdType>
+    <IdColor>4</IdColor>
+    <IdBrand>94</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>NikeSB</Title>
+    <Nombre>Nike Janoski</Nombre>
+    <Description>Skateboard Sneakers</Description>
+    <Observations>Suede</Observations>
+    <PriceDistributor>99.0</PriceDistributor>
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>90.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <Keywords>snkrs</Keywords>
+    <DateUpdate>2019-12-16T14:23:14</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>64</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>qq</Title>
+    <Nombre>qq</Nombre>
+    <Description>qq1</Description>
+    <Observations>qq1</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>1.0</PriceClient>
+    <PriceMember>1.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>65</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>RealMadrid</Title>
+    <Nombre>RealMadrid</Nombre>
+    <Description>RM12</Description>
+    <Observations>RM12</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>123.0</PriceClient>
+    <PriceMember>123.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>67</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>4</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>RM</Title>
+    <Nombre>RM</Nombre>
+    <Description>RealMadrid</Description>
+    <Observations>RealMadrid</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>12.0</PriceClient>
+    <PriceMember>12.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>68</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>7</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Liverpool</Title>
+    <Nombre>Liverpool</Nombre>
+    <Description>Pool</Description>
+    <Observations>Pool</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>6.0</PriceClient>
+    <PriceMember>6.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>70</Id>
+    <IdType>8</IdType>
+    <IdColor>3</IdColor>
+    <IdBrand>1</IdBrand>
+    <IdProvider>1</IdProvider>
+    <IdCatalog>4</IdCatalog>
+    <Title>VANS</Title>
+    <Nombre>VANS</Nombre>
+    <Description>COMODOS</Description>
+    <Observations>COOL</Observations>
+    <PriceDistributor>1000.0</PriceDistributor>
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>200.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>si son comodos</Keywords>
+    <DateUpdate>2019-12-17T07:57:20.813</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>71</Id>
+    <IdType>8</IdType>
+    <IdColor>3</IdColor>
+    <IdBrand>1</IdBrand>
+    <IdProvider>1</IdProvider>
+    <IdCatalog>4</IdCatalog>
+    <Title>tan verdes</Title>
+    <Nombre>ten ver</Nombre>
+    <Description>aquí</Description>
+    <Observations>nomas</Observations>
+    <PriceDistributor>123.0</PriceDistributor>
+    <PriceClient>12.0</PriceClient>
+    <PriceMember>988.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords />
+    <DateUpdate>2019-12-16T22:07:02.057</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>78</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>titulo</Title>
+    <Nombre>pruebaaaa2</Nombre>
+    <Description>desc</Description>
+    <Observations>obs</Observations>
+    <PriceDistributor>100.0</PriceDistributor>
+    <PriceClient>50.0</PriceClient>
+    <PriceMember>20.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>80</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>titulo</Title>
+    <Nombre>pruebaaaa2</Nombre>
+    <Description>desc</Description>
+    <Observations>obs</Observations>
+    <PriceDistributor>100.0</PriceDistributor>
+    <PriceClient>50.0</PriceClient>
+    <PriceMember>20.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>81</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>titulo</Title>
+    <Nombre>pruebaaaa2</Nombre>
+    <Description>desc</Description>
+    <Observations>obs</Observations>
+    <PriceDistributor>100.0</PriceDistributor>
+    <PriceClient>50.0</PriceClient>
+    <PriceMember>20.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>82</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>titulo</Title>
+    <Nombre>pruebaaaa2</Nombre>
+    <Description>desc</Description>
+    <Observations>obs</Observations>
+    <PriceDistributor>100.0</PriceDistributor>
+    <PriceClient>50.0</PriceClient>
+    <PriceMember>20.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>87</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>Adidas</Title>
+    <Nombre>Cambio</Nombre>
+    <Description>Adidas</Description>
+    <Observations>observations</Observations>
+    <PriceDistributor>50.0</PriceDistributor>
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>80.0</PriceMember>
+    <IsEnabled>false</IsEnabled>
+    <Keywords>ads</Keywords>
+    <DateUpdate>2019-12-11T00:00:00</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>102</Id>
+    <IdType xsi:nil="true" />
+    <IdColor xsi:nil="true" />
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>TEST</Title>
+    <Nombre>TEST</Nombre>
+    <Description>TEST</Description>
+    <Observations>TEST</Observations>
+    <PriceDistributor xsi:nil="true" />
+    <PriceClient>100.0</PriceClient>
+    <PriceMember>100.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate xsi:nil="true" />
+  </Productos>
+  <Productos>
+    <Id>104</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>3</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>qaq</Title>
+    <Nombre>qaq</Nombre>
+    <Description>qq</Description>
+    <Observations>qq</Observations>
+    <PriceDistributor>11.0</PriceDistributor>
+    <PriceClient>11.0</PriceClient>
+    <PriceMember>0.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-19T10:02:00.35</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>107</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>1</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>11</Title>
+    <Nombre>11</Nombre>
+    <Description>11</Description>
+    <Observations>11</Observations>
+    <PriceDistributor>1.0</PriceDistributor>
+    <PriceClient>1.0</PriceClient>
+    <PriceMember>0.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-19T10:03:30.667</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>108</Id>
+    <IdType xsi:nil="true" />
+    <IdColor>1</IdColor>
+    <IdBrand xsi:nil="true" />
+    <IdProvider xsi:nil="true" />
+    <IdCatalog xsi:nil="true" />
+    <Title>1</Title>
+    <Nombre>1</Nombre>
+    <Description>1</Description>
+    <Observations>1</Observations>
+    <PriceDistributor>112.0</PriceDistributor>
+    <PriceClient>1.0</PriceClient>
+    <PriceMember>0.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <DateUpdate>2019-12-19T10:05:06.927</DateUpdate>
+  </Productos>
+  <Productos>
+    <Id>109</Id>
+    <IdType>1</IdType>
+    <IdColor>3</IdColor>
+    <IdBrand>2</IdBrand>
+    <IdProvider>2</IdProvider>
+    <IdCatalog>3</IdCatalog>
+    <Title>BADABUN</Title>
+    <Nombre>badabun</Nombre>
+    <Description>badabun</Description>
+    <Observations>wqnmdqwdkm</Observations>
+    <PriceDistributor>200.0</PriceDistributor>
+    <PriceClient>200.0</PriceClient>
+    <PriceMember>200.0</PriceMember>
+    <IsEnabled>true</IsEnabled>
+    <Keywords>ksj naksdjnasd</Keywords>
+    <DateUpdate>2019-12-19T00:00:00</DateUpdate>
+  </Productos>
+</ArrayOfProductos>

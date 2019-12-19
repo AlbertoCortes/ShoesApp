@@ -9,7 +9,7 @@ namespace ShoesAppEntities
     public class Log
     {
         public int idLog { set; get; }
-        public int? idProduct { set; get; }
-        public int? idActionMode { set; get; }
+        public int idProduct { set; get; }
+        public byte? ActionMade { set; get; }
     }
 }
