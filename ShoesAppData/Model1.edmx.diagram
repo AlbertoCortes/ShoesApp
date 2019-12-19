@@ -42,6 +42,7 @@
         <AssociationConnector Association="DataProductsModel.FK_ProductsSimilarProduct" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_ProductsSizeForProduct" ManuallyRouted="false" />
         <AssociationConnector Association="DataProductsModel.FK_QualificationProducts" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DataProductsModel.ChangesOnProduct" Width="1.5" PointX="5.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -644,6 +644,7 @@
       <Parameter Name="idProduct" Mode="In" Type="Int32" />
       <Parameter Name="idSize" Mode="In" Type="Int32" />
     </FunctionImport>
+    <EntitySet Name="ChangesOnProducts" EntityType="DataProductsModel.ChangesOnProduct" />
   </EntityContainer>
   <ComplexType Name="ACOB_GetColors_Result">
     <Property Type="Int32" Name="IdColor" Nullable="false" />
@@ -690,4 +691,12 @@
     <Property Type="Int32" Name="IdProduct" Nullable="false" />
     <Property Type="String" Name="Code" Nullable="false" />
   </ComplexType>
+  <EntityType Name="ChangesOnProduct">
+    <Key>
+      <PropertyRef Name="IdLog" />
+    </Key>
+    <Property Name="IdLog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProduct" Type="Int32" Nullable="false" />
+    <Property Name="ActionMade" Type="Byte" Nullable="false" />
+  </EntityType>
 </Schema>

@@ -88,6 +88,14 @@
           <Property Name="DateUpdate" Type="datetime" Nullable="false" />
           <Property Name="IsEnabled" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="ChangesOnProduct">
+          <Key>
+            <PropertyRef Name="IdLog" />
+          </Key>
+          <Property Name="IdLog" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdProduct" Type="int" Nullable="false" />
+          <Property Name="ActionMade" Type="tinyint" Nullable="false" />
+        </EntityType>
         <EntityType Name="Comments">
           <Key>
             <PropertyRef Name="IdComent" />
@@ -532,6 +540,7 @@ warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not
           <EntitySet Name="CatSizes" EntityType="Self.CatSizes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CatTypeDetails" EntityType="Self.CatTypeDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CatTypeProduct" EntityType="Self.CatTypeProduct" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChangesOnProduct" EntityType="Self.ChangesOnProduct" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="database_firewall_rules" EntityType="Self.database_firewall_rules" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="database_firewall_rules1" EntityType="Self.database_firewall_rules1" Schema="dbo" store:Type="Tables" />
@@ -1273,6 +1282,7 @@ warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not
             <Parameter Name="idProduct" Mode="In" Type="Int32" />
             <Parameter Name="idSize" Mode="In" Type="Int32" />
           </FunctionImport>
+          <EntitySet Name="ChangesOnProducts" EntityType="DataProductsModel.ChangesOnProduct" />
         </EntityContainer>
         <ComplexType Name="ACOB_GetColors_Result">
           <Property Type="Int32" Name="IdColor" Nullable="false" />
@@ -1319,6 +1329,14 @@ warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not
           <Property Type="Int32" Name="IdProduct" Nullable="false" />
           <Property Type="String" Name="Code" Nullable="false" />
         </ComplexType>
+        <EntityType Name="ChangesOnProduct">
+          <Key>
+            <PropertyRef Name="IdLog" />
+          </Key>
+          <Property Name="IdLog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdProduct" Type="Int32" Nullable="false" />
+          <Property Name="ActionMade" Type="Byte" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1623,6 +1641,15 @@ warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="ACOB_InsertSizeProduct" FunctionName="DataProductsModel.Store.ACOB_InsertSizeProduct" />
           <FunctionImportMapping FunctionImportName="ACOB_UpdateSizeProduct" FunctionName="DataProductsModel.Store.ACOB_UpdateSizeProduct" />
+          <EntitySetMapping Name="ChangesOnProducts">
+            <EntityTypeMapping TypeName="DataProductsModel.ChangesOnProduct">
+              <MappingFragment StoreEntitySet="ChangesOnProduct">
+                <ScalarProperty Name="ActionMade" ColumnName="ActionMade" />
+                <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
+                <ScalarProperty Name="IdLog" ColumnName="IdLog" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

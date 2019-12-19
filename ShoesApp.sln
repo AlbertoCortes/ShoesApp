@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoesAppBuissnes", "ShoesAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoesAppEntities", "ShoesAppEntities\ShoesAppEntities.csproj", "{3F9B307C-664D-4894-8196-5847486B3DF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watcher", "Watcher\Watcher.csproj", "{58AB1AD8-3E34-4587-852E-AB1547EEB50C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{3F9B307C-664D-4894-8196-5847486B3DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9B307C-664D-4894-8196-5847486B3DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F9B307C-664D-4894-8196-5847486B3DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AB1AD8-3E34-4587-852E-AB1547EEB50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AB1AD8-3E34-4587-852E-AB1547EEB50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AB1AD8-3E34-4587-852E-AB1547EEB50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AB1AD8-3E34-4587-852E-AB1547EEB50C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

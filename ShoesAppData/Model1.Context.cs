@@ -46,6 +46,7 @@ namespace ShoesAppData
         public virtual DbSet<SizeForProduct> SizeForProducts { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<database_firewall_rules2> database_firewall_rules2 { get; set; }
+        public virtual DbSet<ChangesOnProduct> ChangesOnProducts { get; set; }
     
         public virtual int ACOB_DeleteProd(Nullable<int> iD)
         {

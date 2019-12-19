@@ -7,7 +7,6 @@ C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\bin\Debug\Newtonsoft
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\bin\Debug\EntityFramework.xml
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.csprojAssemblyReference.cache
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.csproj.CoreCompileInputs.cache
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.csproj.CopyComplete
 C:\Users\Curso\Documents\Academia\ShoesApp\ShoesAppEntities\obj\Debug\ShoesAppEntities.dll

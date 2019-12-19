@@ -299,5 +299,14 @@
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="ACOB_InsertSizeProduct" FunctionName="DataProductsModel.Store.ACOB_InsertSizeProduct" />
     <FunctionImportMapping FunctionImportName="ACOB_UpdateSizeProduct" FunctionName="DataProductsModel.Store.ACOB_UpdateSizeProduct" />
+    <EntitySetMapping Name="ChangesOnProducts">
+      <EntityTypeMapping TypeName="DataProductsModel.ChangesOnProduct">
+        <MappingFragment StoreEntitySet="ChangesOnProduct">
+          <ScalarProperty Name="ActionMade" ColumnName="ActionMade" />
+          <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
+          <ScalarProperty Name="IdLog" ColumnName="IdLog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

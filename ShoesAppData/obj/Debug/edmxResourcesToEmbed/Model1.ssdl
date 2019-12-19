@@ -83,6 +83,14 @@
     <Property Name="DateUpdate" Type="datetime" Nullable="false" />
     <Property Name="IsEnabled" Type="bit" Nullable="false" />
   </EntityType>
+  <EntityType Name="ChangesOnProduct">
+    <Key>
+      <PropertyRef Name="IdLog" />
+    </Key>
+    <Property Name="IdLog" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProduct" Type="int" Nullable="false" />
+    <Property Name="ActionMade" Type="tinyint" Nullable="false" />
+  </EntityType>
   <EntityType Name="Comments">
     <Key>
       <PropertyRef Name="IdComent" />
@@ -527,6 +535,7 @@ warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not
     <EntitySet Name="CatSizes" EntityType="Self.CatSizes" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CatTypeDetails" EntityType="Self.CatTypeDetails" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CatTypeProduct" EntityType="Self.CatTypeProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChangesOnProduct" EntityType="Self.ChangesOnProduct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="database_firewall_rules" EntityType="Self.database_firewall_rules" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="database_firewall_rules1" EntityType="Self.database_firewall_rules1" Schema="dbo" store:Type="Tables" />

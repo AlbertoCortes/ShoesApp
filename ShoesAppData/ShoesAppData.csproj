@@ -95,6 +95,9 @@
     <Compile Include="CatTypeProduct.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ChangesOnProduct.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Comment.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
