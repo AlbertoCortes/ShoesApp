@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>25</Id>
+  <IdType>1</IdType>
+  <IdColor>1</IdColor>
+  <IdBrand>1</IdBrand>
+  <IdProvider>1</IdProvider>
+  <IdCatalog>3</IdCatalog>
+  <Title>Andrea</Title>
+  <Nombre>Ana</Nombre>
+  <Description>Tenis</Description>
+  <Observations>tamaño bebe</Observations>
+  <PriceDistributor>1000.0</PriceDistributor>
+  <PriceClient>500.0</PriceClient>
+  <PriceMember>300.0</PriceMember>
+  <IsEnabled>false</IsEnabled>
+  <Keywords>Tenis</Keywords>
+  <DateUpdate>2019-12-12T12:31:57</DateUpdate>
+</Productos>

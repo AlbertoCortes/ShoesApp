@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>138</Id>
+  <IdType xsi:nil="true" />
+  <IdColor xsi:nil="true" />
+  <IdBrand xsi:nil="true" />
+  <IdProvider xsi:nil="true" />
+  <IdCatalog xsi:nil="true" />
+  <Title>BADABUN</Title>
+  <Nombre>BADABUN</Nombre>
+  <Description>BADABUN</Description>
+  <Observations>BADABUN</Observations>
+  <PriceDistributor>10.0</PriceDistributor>
+  <PriceClient>10.0</PriceClient>
+  <PriceMember>10.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <Keywords>BADABUN</Keywords>
+  <DateUpdate xsi:nil="true" />
+</Productos>

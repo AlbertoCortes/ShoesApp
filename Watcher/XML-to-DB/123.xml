@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>123</Id>
+  <IdType>2</IdType>
+  <IdColor>5</IdColor>
+  <IdBrand>94</IdBrand>
+  <IdProvider>2</IdProvider>
+  <IdCatalog>3</IdCatalog>
+  <Title>Pumas333</Title>
+  <Nombre>Pumas3</Nombre>
+  <Description>tenis pirata33</Description>
+  <Observations>tenis pirata333</Observations>
+  <PriceDistributor>12.0</PriceDistributor>
+  <PriceClient>453.0</PriceClient>
+  <PriceMember>453.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <Keywords>piraton</Keywords>
+  <DateUpdate xsi:nil="true" />
+</Productos>

@@ -61,6 +61,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ShoesAppBuissnes\ShoesAppBuissnes.csproj">
+      <Project>{4a4ea576-4660-4b6e-8dd1-9ab0f3673ec9}</Project>
+      <Name>ShoesAppBuissnes</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ShoesAppCommon\ShoesAppCommon.csproj">
       <Project>{8e0368db-14a0-4d97-8477-d93441a07016}</Project>
       <Name>ShoesAppCommon</Name>
@@ -75,6 +79,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="XML-to-DB\" />
     <Folder Include="XML\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

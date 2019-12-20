@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>129</Id>
+  <IdType xsi:nil="true" />
+  <IdColor xsi:nil="true" />
+  <IdBrand xsi:nil="true" />
+  <IdProvider xsi:nil="true" />
+  <IdCatalog xsi:nil="true" />
+  <Title>ADI</Title>
+  <Nombre>ADI</Nombre>
+  <Description>ADI</Description>
+  <Observations>ADI</Observations>
+  <PriceDistributor>23.0</PriceDistributor>
+  <PriceClient>23.0</PriceClient>
+  <PriceMember>23.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <Keywords>ADI</Keywords>
+  <DateUpdate xsi:nil="true" />
+</Productos>

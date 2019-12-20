@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>71</Id>
+  <IdType>8</IdType>
+  <IdColor>3</IdColor>
+  <IdBrand>1</IdBrand>
+  <IdProvider>1</IdProvider>
+  <IdCatalog>4</IdCatalog>
+  <Title>tan verdes</Title>
+  <Nombre>ten ver</Nombre>
+  <Description>aquí</Description>
+  <Observations>nomas</Observations>
+  <PriceDistributor>123.0</PriceDistributor>
+  <PriceClient>12.0</PriceClient>
+  <PriceMember>988.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <Keywords />
+  <DateUpdate>2019-12-16T22:07:02.057</DateUpdate>
+</Productos>

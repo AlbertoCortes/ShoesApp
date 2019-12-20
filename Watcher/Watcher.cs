@@ -6,13 +6,23 @@ using ShoesAppData;
 using ShoesAppEntities;
 using ShoesAppCommon;
 using System.Xml.Linq;
+using System.IO;
+using System.Xml;
+using ShoesAppBuissnes;
+using System.Threading;
 
 namespace Watcher
 {
     class Watcher
     {
+        static Buissnes buissnes = new Buissnes();
         public static string path = $@"C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\XML/Productos.xml";
-        public static async void WatcherProducts()
+        public static string path2 = $@"C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\XML-to-DB";
+       static Thread p1 = new Thread(WatcherProducts);
+        static Thread p2 = new Thread(WatcherFolder);
+        
+
+        public static void  WatcherProducts()
         {
             List<Log> log = Data.Watcher();
             int current_id = (from l in log orderby l.idLog descending select l.idLog).First();
@@ -39,15 +49,24 @@ namespace Watcher
                             Console.WriteLine("Se ha Modificado un producto");
                             UpdatePXML(productos.FirstOrDefault());
                             break;
+                        
                     }
                     current_id = aux_id.idLog;
                 }
-                await Task.Delay(100);
+                Task.Delay(100);
             }
         }
         public static void InizializeXML(List<Productos> prod)
         {
             Common.SerializeToXml<List<Productos>>(prod);
+        }
+
+        public static void InizializeFolder(List<Productos> prod)
+        {
+            foreach (Productos item in prod)
+            {
+                Common.SerializeToXmlInd<Productos>(item,item.Id.ToString());
+            }
         }
 
         public static void InsertPXML(Productos prod)
@@ -105,11 +124,68 @@ namespace Watcher
             doc.Save(path);
         }
 
-        public static void Main(string[] args)
+        public static void WatcherFolder()
+        {
+            FileSystemWatcher watcherFolder = new FileSystemWatcher();
+            watcherFolder.Path = path2;
+            watcherFolder.Created += wInsert;
+            watcherFolder.Changed += wUpdate;
+            watcherFolder.Deleted += wDelete;
+            watcherFolder.EnableRaisingEvents = true;
+            Console.WriteLine("Watching folder");
+        }
+
+        public static void wInsert(object sender, FileSystemEventArgs e)
+        {
+            XmlDocument lista = new XmlDocument();
+            lista.Load(e.FullPath);
+            Productos prod = Common.DeserializeFromXml<Productos>(lista.OuterXml);
+            buissnes.InsertProductos(prod);
+            Console.WriteLine($"Insert: {e.Name}");
+
+        }
+
+        public static void wUpdate(object sender, FileSystemEventArgs e)
+        {
+            XmlDocument lista = new XmlDocument();
+            bool s = true;
+            while (s)
+            {
+                try
+                {
+                    lista.Load(e.FullPath);
+                    s = false;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Cierre el archivo");
+                    s = true;
+                    //throw;
+                }
+            }
+           
+            Productos prod = Common.DeserializeFromXml<Productos>(lista.OuterXml);
+            buissnes.UpdateProductos(prod);
+            Console.WriteLine($"UPDATE: {e.Name}");
+
+        }
+
+        public static void wDelete(object sender, FileSystemEventArgs e)
+        {
+            XmlDocument lista = new XmlDocument();
+            lista.Load(e.FullPath);
+            Productos prod = Common.DeserializeFromXml<Productos>(lista.OuterXml);
+            buissnes.DeleteProductos(prod.Id);
+            Console.WriteLine($"Delete: {e.Name}");
+        }
+       public static void Main(string[] args)
         {
             List<Productos> prod = Data.SearchProducts(0, "%%");
             InizializeXML(prod);
-            WatcherProducts();
+            InizializeFolder(prod);
+           // p1.Start();
+            p2.Start();
+
             Console.ReadLine();
         }
     }

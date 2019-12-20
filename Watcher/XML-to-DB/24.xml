@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>24</Id>
+  <IdType xsi:nil="true" />
+  <IdColor>2</IdColor>
+  <IdBrand xsi:nil="true" />
+  <IdProvider xsi:nil="true" />
+  <IdCatalog xsi:nil="true" />
+  <Title>ADIDAS</Title>
+  <Nombre>ADIDAS</Nombre>
+  <Description>Bonitoseeeee</Description>
+  <Observations>Comodos</Observations>
+  <PriceDistributor>10.0</PriceDistributor>
+  <PriceClient>12.0</PriceClient>
+  <PriceMember>12.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <DateUpdate>2019-12-19T16:02:05.26</DateUpdate>
+</Productos>

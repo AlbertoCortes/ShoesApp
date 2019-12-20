@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>117</Id>
+  <IdType xsi:nil="true" />
+  <IdColor>2</IdColor>
+  <IdBrand xsi:nil="true" />
+  <IdProvider xsi:nil="true" />
+  <IdCatalog xsi:nil="true" />
+  <Title>Nuevo</Title>
+  <Nombre>Nuevo</Nombre>
+  <Description>Aqui</Description>
+  <Observations>Aqui</Observations>
+  <PriceDistributor>11.0</PriceDistributor>
+  <PriceClient>11.0</PriceClient>
+  <PriceMember>0.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <DateUpdate>2019-12-19T12:21:46.963</DateUpdate>
+</Productos>

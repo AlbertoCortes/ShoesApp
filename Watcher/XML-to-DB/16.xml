@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>16</Id>
+  <IdType>3</IdType>
+  <IdColor>3</IdColor>
+  <IdBrand>3</IdBrand>
+  <IdProvider>2</IdProvider>
+  <IdCatalog>3</IdCatalog>
+  <Title>Nike Gold</Title>
+  <Nombre>Nike Gold</Nombre>
+  <Description>Nike Gold</Description>
+  <Observations>Nike Gold</Observations>
+  <PriceDistributor>1000.0</PriceDistributor>
+  <PriceClient>1500.0</PriceClient>
+  <PriceMember>1500.0</PriceMember>
+  <IsEnabled>false</IsEnabled>
+  <Keywords />
+  <DateUpdate>2019-12-11T21:30:09.217</DateUpdate>
+</Productos>

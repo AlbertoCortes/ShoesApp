@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>34</Id>
+  <IdType xsi:nil="true" />
+  <IdColor>4</IdColor>
+  <IdBrand xsi:nil="true" />
+  <IdProvider xsi:nil="true" />
+  <IdCatalog xsi:nil="true" />
+  <Title>los zapatosddd</Title>
+  <Nombre>los zapatosddd</Nombre>
+  <Description>zap</Description>
+  <Observations>zp</Observations>
+  <PriceDistributor>90.0</PriceDistributor>
+  <PriceClient>30.0</PriceClient>
+  <PriceMember>10.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <DateUpdate>2019-12-19T11:07:42.933</DateUpdate>
+</Productos>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>160</Id>
+  <IdType>7</IdType>
+  <IdColor>2</IdColor>
+  <IdBrand>35</IdBrand>
+  <IdProvider>2</IdProvider>
+  <IdCatalog>4</IdCatalog>
+  <Title>sadsdxxxxxxxxxx</Title>
+  <Nombre>sadsadsaxxxd</Nombre>
+  <Description>asdasdsad</Description>
+  <Observations>sadsad</Observations>
+  <PriceDistributor>87789.0</PriceDistributor>
+  <PriceClient>89.0</PriceClient>
+  <PriceMember>6786783.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <Keywords>dasdas</Keywords>
+  <DateUpdate>2019-12-20T10:52:17.827</DateUpdate>
+</Productos>

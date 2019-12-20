@@ -20,8 +20,10 @@ namespace ShoesAppCommon
 
         public static T DeserializeFromXml<T>(string xml)
         {
-            T result;
-            XmlSerializer ser = new XmlSerializer(typeof(T));
+            T result; XmlRootAttribute xmlRoot = new XmlRootAttribute();
+            xmlRoot.ElementName = "Productos";
+            xmlRoot.IsNullable = true;
+            XmlSerializer ser = new XmlSerializer(typeof(T),xmlRoot);
             using (TextReader tr = new StringReader(xml))
             {
                 result = (T)ser.Deserialize(tr);
@@ -29,7 +31,7 @@ namespace ShoesAppCommon
             return result;
         }
 
-        public static  void SerializeToXml<T>(T obj)
+        public static  void SerializeToXml<T>(T obj )
         {
             string fileName = $@"C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\XML/Productos.xml";
             XmlSerializer ser = new XmlSerializer(typeof(T));
@@ -37,6 +39,16 @@ namespace ShoesAppCommon
             ser.Serialize(fileStream, obj);
             fileStream.Close();
         }
+
+        public static void SerializeToXmlInd<T>(T obj, string name)
+        {
+            string fileName = $@"C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\XML-to-DB/{name}.xml";
+            XmlSerializer ser = new XmlSerializer(typeof(T));
+            FileStream fileStream = new FileStream(fileName, FileMode.Create);
+            ser.Serialize(fileStream, obj);
+            fileStream.Close();
+        }
+
 
         public static List<T> GetList<T>()
         {

@@ -21,3 +21,6 @@ C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\obj\Debug\Watcher.csproj.Core
 C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\obj\Debug\Watcher.csproj.CopyComplete
 C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\obj\Debug\Watcher.exe
 C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\obj\Debug\Watcher.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\bin\Debug\ShoesAppBuissnes.dll
+C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\bin\Debug\ShoesAppBuissnes.pdb
+C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\bin\Debug\ShoesAppBuissnes.dll.config

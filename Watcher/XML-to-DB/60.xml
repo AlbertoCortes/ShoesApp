@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>60</Id>
+  <IdType xsi:nil="true" />
+  <IdColor xsi:nil="true" />
+  <IdBrand xsi:nil="true" />
+  <IdProvider xsi:nil="true" />
+  <IdCatalog xsi:nil="true" />
+  <Title>Fer</Title>
+  <Nombre>Fer</Nombre>
+  <Description>FerD</Description>
+  <Observations>FerD</Observations>
+  <PriceDistributor xsi:nil="true" />
+  <PriceClient>102.0</PriceClient>
+  <PriceMember>102.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <DateUpdate xsi:nil="true" />
+</Productos>

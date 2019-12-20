@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>70</Id>
+  <IdType>8</IdType>
+  <IdColor>3</IdColor>
+  <IdBrand>1</IdBrand>
+  <IdProvider>1</IdProvider>
+  <IdCatalog>4</IdCatalog>
+  <Title>VANS</Title>
+  <Nombre>VANS</Nombre>
+  <Description>COMODOS</Description>
+  <Observations>COOL</Observations>
+  <PriceDistributor>1000.0</PriceDistributor>
+  <PriceClient>100.0</PriceClient>
+  <PriceMember>200.0</PriceMember>
+  <IsEnabled>true</IsEnabled>
+  <Keywords>si son comodos</Keywords>
+  <DateUpdate>2019-12-17T07:57:20.813</DateUpdate>
+</Productos>

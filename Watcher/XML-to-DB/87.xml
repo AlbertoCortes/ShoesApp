@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>87</Id>
+  <IdType xsi:nil="true" />
+  <IdColor xsi:nil="true" />
+  <IdBrand xsi:nil="true" />
+  <IdProvider xsi:nil="true" />
+  <IdCatalog xsi:nil="true" />
+  <Title>Adidas</Title>
+  <Nombre>Cambio</Nombre>
+  <Description>Adidas</Description>
+  <Observations>observations</Observations>
+  <PriceDistributor>50.0</PriceDistributor>
+  <PriceClient>100.0</PriceClient>
+  <PriceMember>80.0</PriceMember>
+  <IsEnabled>false</IsEnabled>
+  <Keywords>ads</Keywords>
+  <DateUpdate>2019-12-11T00:00:00</DateUpdate>
+</Productos>
