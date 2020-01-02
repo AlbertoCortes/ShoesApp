@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ShoesAppBuissnes;
+using ShoesAppCommon;
 using ShoesAppData;
 using ShoesAppEntities;
-using ShoesAppCommon;
-using System.Xml.Linq;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Xml;
-using ShoesAppBuissnes;
-using System.Threading;
+using System.Xml.Linq;
 
 namespace Watcher
 {
@@ -18,11 +17,8 @@ namespace Watcher
         static Buissnes buissnes = new Buissnes();
         public static string path = $@"C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\XML/Productos.xml";
         public static string path2 = $@"C:\Users\Curso\Documents\Academia\ShoesApp\Watcher\XML-to-DB";
-       static Thread p1 = new Thread(WatcherProducts);
-        static Thread p2 = new Thread(WatcherFolder);
-        
 
-        public static void  WatcherProducts()
+        public static void WatcherProducts()
         {
             List<Log> log = Data.Watcher();
             int current_id = (from l in log orderby l.idLog descending select l.idLog).First();
@@ -49,7 +45,7 @@ namespace Watcher
                             Console.WriteLine("Se ha Modificado un producto");
                             UpdatePXML(productos.FirstOrDefault());
                             break;
-                        
+
                     }
                     current_id = aux_id.idLog;
                 }
@@ -65,7 +61,7 @@ namespace Watcher
         {
             foreach (Productos item in prod)
             {
-                Common.SerializeToXmlInd<Productos>(item,item.Id.ToString());
+                Common.SerializeToXmlInd<Productos>(item, item.Id.ToString());
             }
         }
 
@@ -160,14 +156,12 @@ namespace Watcher
                 {
                     Console.WriteLine("Cierre el archivo");
                     s = true;
-                    //throw;
                 }
             }
-           
+
             Productos prod = Common.DeserializeFromXml<Productos>(lista.OuterXml);
             buissnes.UpdateProductos(prod);
             Console.WriteLine($"UPDATE: {e.Name}");
-
         }
 
         public static void wDelete(object sender, FileSystemEventArgs e)
@@ -178,14 +172,19 @@ namespace Watcher
             buissnes.DeleteProductos(prod.Id);
             Console.WriteLine($"Delete: {e.Name}");
         }
-       public static void Main(string[] args)
+        public static void Main(string[] args)
         {
             List<Productos> prod = Data.SearchProducts(0, "%%");
             InizializeXML(prod);
             InizializeFolder(prod);
-           // p1.Start();
-            p2.Start();
-
+            Task Task1 = Task.Run(() =>
+            {
+                WatcherProducts();
+            });
+            Task Task2 = Task.Run(() =>
+            {
+                WatcherFolder();
+            });
             Console.ReadLine();
         }
     }
